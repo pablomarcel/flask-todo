@@ -18,7 +18,9 @@ app = Flask(__name__)
 
 # so this line is necessary for deployment to heroku
 
-app.secret_key = os.environ.get("SECRET_KEY").encode()
+app.secret_key = os.environ.get('SECRET_KEY').encode()
+
+# app.secret_key = os.environ.get("SECRET_KEY").encode()
 
 
 @app.route("/all")
